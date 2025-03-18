@@ -1,0 +1,15 @@
+.outh-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.outh-menu{
+    display: flex;
+    column-gap: 10px;
+  }
+
+.outh-menu a{
+    text-decoration: none;
+}
