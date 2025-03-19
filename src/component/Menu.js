@@ -24,7 +24,9 @@ function Menu() {
        <li>
        <Link to="contact">iletişim</Link>
         </li>
-        {/* <li onClick={()=>navigate("contact")}>iletşim(nav)</li> */}
+        <li>
+          <a href='#'>learn react</a>
+        </li>
     </ul>
     </div>
   )
