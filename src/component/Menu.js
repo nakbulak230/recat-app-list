@@ -24,9 +24,7 @@ function Menu() {
        <li>
        <Link to="contact">iletişim</Link>
         </li>
-        <li>
-          <a href='#'>learn react</a>
-        </li>
+       
     </ul>
     </div>
   )
