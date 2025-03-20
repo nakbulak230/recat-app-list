@@ -1,10 +1,13 @@
 import React,{useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
+ 
 function Users() {
   const[users,setUsers]=useState([]);
+  
+ 
   useEffect(
     ()=>{
-      fetch(`https://jsonplaceholder.typicode.com/Users`)
+      fetch(`${process.env.REACT_APP_API_ENDPOINT}/Users`)
       .then((res)=>res.json())       
       .then((data)=>setUsers(data))
             },[]);

@@ -6,9 +6,10 @@ function UsersDetay() {
     const location=useLocation();
     const[user,setUser]=useState(location.state);
     
+    
      useEffect(
         ()=>{ if(!user?.id){
-          fetch(`https://jsonplaceholder.typicode.com/Users/${id}`)
+          fetch(`${process.env.REACT_APP_API_ENDPOINT}/Users/${id}`)
           .then((res)=>res.json())       
           .then((data)=>setUser(data))}
                 },[id,user]);
